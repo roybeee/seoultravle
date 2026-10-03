@@ -14,16 +14,21 @@
 """
 
 import random
+import sys
 from collections import Counter
 
 SEED = 20261003
 TRIALS = 500
 N_HONEST = 1000
 START_RATIOS = (1.0, 0.995, 0.99, 0.98, 0.97, 0.95, 0.92, 0.88)
+# 참가자 행동 가정. 인자로 'uniform'을 주면 모두 무작위로 숫자를 고른다고 가정한다(강건성 점검용).
+PROFILE = sys.argv[1] if len(sys.argv) > 1 else "behavioral"
 
 
 def honest_bid(top, rng):
-    """현실형 혼합 행동: 20% 무작위, 45% 최상단 근처, 35% 조금 아래로 회피."""
+    """현실형 혼합 행동: 20% 무작위, 45% 최상단 근처, 35% 조금 아래로 회피. (uniform이면 전부 무작위)"""
+    if PROFILE == "uniform":
+        return rng.randint(1, top)
     r = rng.random()
     if r < 0.20:
         return rng.randint(1, top)
@@ -131,6 +136,7 @@ def main():
         "E": "E 무작위배정(추첨)",
     }
     ks = (1, 10, 30, 100)
+    print(f"참가자 행동 가정: {PROFILE}")
     print(f"정직 참가자 {N_HONEST:,}명 + 공격자 1명(참가권 K장, 최적 시작점). 시행 {TRIALS}회/조합.")
     print("비례 기준선(공정한 추첨): K=1 0.1%, K=10 1.0%, K=30 2.9%, K=100 9.1%")
     print()
