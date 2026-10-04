@@ -1,0 +1,149 @@
+{
+  "title": "다시, 왼손",
+  "logline": "손목 부상으로 무대에서 사라진 천재 피아니스트가 5년 만에 복귀하며 사고의 진실과 마주한다.",
+  "genre": "복수 로맨스",
+  "story_year": 2026,
+  "tone": "차갑고 서정적인",
+  "target_rating": "15",
+  "characters": [
+    {
+      "id": "chr_1eb74a32b4",
+      "name": "한서윤",
+      "birth_year": 1999,
+      "gender": "여",
+      "nationality": "한국",
+      "occupation": "피아니스트",
+      "traits": [
+        "내성적",
+        "완벽주의",
+        "왼손 새끼손가락을 무의식적으로 문지름"
+      ],
+      "appearance": "긴 흑발, 검은 니트, 손목의 얇은 흉터",
+      "speech_style": "말끝을 흐리는 존댓말, 화가 나면 오히려 또박또박해짐",
+      "backstory": "콩쿠르 결선 전날 손목을 다쳐 무대에서 사라졌다.",
+      "life_events": [
+        {
+          "age": 7,
+          "description": "어머니에게 처음 피아노를 배움"
+        },
+        {
+          "age": 21,
+          "description": "결선 전날 계단 사고로 손목 부상"
+        }
+      ],
+      "attributes": {
+        "키": "163cm",
+        "주 사용 손": "왼손"
+      },
+      "deceased_in_story_year": null,
+      "real_person": false
+    },
+    {
+      "id": "chr_a324dfbb5a",
+      "name": "도현우",
+      "birth_year": 1996,
+      "gender": "남",
+      "nationality": "한국",
+      "occupation": "공연기획사 대표",
+      "traits": [
+        "능청스러움",
+        "약속에 집착"
+      ],
+      "appearance": "회색 수트, 늘 같은 만년필",
+      "speech_style": "가벼운 반말, 중요한 말은 존댓말로 바꿔 말함",
+      "backstory": "서윤의 사고 당일 계단에 있던 목격자.",
+      "life_events": [],
+      "attributes": {
+        "키": "184cm"
+      },
+      "deceased_in_story_year": null,
+      "real_person": false
+    },
+    {
+      "id": "chr_324633b255",
+      "name": "한미경",
+      "birth_year": 1970,
+      "gender": "여",
+      "nationality": null,
+      "occupation": "피아노 교사",
+      "traits": [],
+      "appearance": null,
+      "speech_style": null,
+      "backstory": "서윤의 어머니. 딸의 사고 1년 뒤 세상을 떠났다.",
+      "life_events": [],
+      "attributes": {},
+      "deceased_in_story_year": 2021,
+      "real_person": false
+    },
+    {
+      "id": "chr_7f603042ba",
+      "name": "오세라",
+      "birth_year": 1998,
+      "gender": "여",
+      "nationality": null,
+      "occupation": "피아니스트",
+      "traits": [
+        "승부욕",
+        "겉으로 다정함"
+      ],
+      "appearance": "밝은 금발 단발, 진주 귀걸이",
+      "speech_style": "애교 섞인 존댓말",
+      "backstory": "서윤이 빠진 결선에서 우승했다.",
+      "life_events": [],
+      "attributes": {},
+      "deceased_in_story_year": null,
+      "real_person": false
+    }
+  ],
+  "places": [
+    {
+      "id": "plc_4b9e5c5411",
+      "name": "예술의전당 리허설룸",
+      "description": null
+    },
+    {
+      "id": "plc_c1afa2eb56",
+      "name": "성수동 지하 연습실",
+      "description": null
+    },
+    {
+      "id": "plc_7c8c4814ce",
+      "name": "옛 콩쿠르 홀 계단",
+      "description": null
+    }
+  ],
+  "relations": [
+    {
+      "source": "chr_1eb74a32b4",
+      "target": "chr_a324dfbb5a",
+      "kind": "불신→신뢰",
+      "note": null
+    },
+    {
+      "source": "chr_324633b255",
+      "target": "chr_1eb74a32b4",
+      "kind": "모녀",
+      "note": null
+    },
+    {
+      "source": "chr_7f603042ba",
+      "target": "chr_1eb74a32b4",
+      "kind": "라이벌",
+      "note": "사고의 진실을 안다"
+    }
+  ],
+  "rules": [
+    {
+      "id": "rul_85cf8d739e",
+      "text": "초자연 현상 없음. '타임슬립' 금지"
+    },
+    {
+      "id": "rul_eddd15591a",
+      "text": "서윤은 오른손으로 섬세한 연주를 할 수 없다"
+    }
+  ],
+  "ng_list": [
+    "출생의 비밀",
+    "기억상실"
+  ]
+}
